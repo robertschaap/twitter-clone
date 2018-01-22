@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Twitter Clone
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='author' content='Robert Schaap')
+    link(href='/css/normalize.css' rel='stylesheet' type='text/css')
+    link(href='/css/stylesheet.css' rel='stylesheet' type='text/css')
+    link(rel='icon' type='image/png' href='images/favicon.png' sizes='32x32')
+
+  body
+    header(role='heading')
+      .header_top
+        .widthwrapper
+
+      //- div.header_stick
+      div
+        .header_banner
+        .header_user
+          .widthwrapper
+            img.h_user_avatar(src='/images/aIF6J-S0_bigger.jpg')
+            .h_user_name
+              .h_user_fullname Robert Schaap
+              div @colorcodecode
+            .h_user_stat
+              div Tweets
+              .h_user_statcount 35
+            .h_user_stat
+              div Threads
+              .h_user_statcount 35
+            .h_user_stat
+              div Followers
+              .h_user_statcount 35
+            .h_user_stat
+              div Following
+              .h_user_statcount 35
+    
+    block content
+
+    footer(role='contentinfo')
+
+    script(src='https://code.jquery.com/jquery-3.2.1.js')
+    script(type='text/javascript', src='/scripts/javascript.js')

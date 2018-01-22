@@ -1,0 +1,45 @@
+// Global Styles
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+h3 {
+  margin: 0;
+}
+.widthwrapper {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+// Section Styles
+main {
+  padding: 2rem 1rem 1rem 1rem;
+  position: relative;
+  z-index: 1;
+
+  .main_stick {
+    padding-top: 22rem;
+  }
+  
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.sidebar{
+  float: left;
+  width: 30%;
+
+  &_topic {
+    background: linear-gradient(to top left, #f2f2f2 0%, #ffffff 100%);  border-bottom: 1px solid #eee;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}

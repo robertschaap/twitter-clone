@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif; }
+
+h3 {
+  margin: 0; }
+
+.widthwrapper {
+  margin: 0 auto;
+  max-width: 900px; }
+
+main {
+  padding: 2rem 1rem 1rem 1rem;
+  position: relative;
+  z-index: 1; }
+  main .main_stick {
+    padding-top: 22rem; }
+  main::after {
+    content: '';
+    display: table;
+    clear: both; }
+
+.sidebar {
+  float: left;
+  width: 30%; }
+  .sidebar_topic {
+    background: linear-gradient(to top left, #f2f2f2 0%, #ffffff 100%);
+    border-bottom: 1px solid #eee;
+    padding: 1rem;
+    margin-bottom: 1rem; }
+
+.header_top {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.header_banner {
+  background: linear-gradient(to bottom right, #ffffcc 0%, #ffcc66 100%);
+  height: 200px;
+  width: 100%;
+  margin-top: 2rem; }
+
+.header_user {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+  width: 100%; }
+  .header_user .h_user_avatar {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle; }
+  .header_user .h_user_name {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 3rem; }
+  .header_user .h_user_fullname {
+    font-weight: bold; }
+  .header_user .h_user_stat {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 90px; }
+  .header_user .h_user_statcount {
+    font-weight: bold; }
+
+.header_stick {
+  position: fixed;
+  width: 100%;
+  margin-top: -11rem;
+  z-index: 99; }
+
+.timeline {
+  background-color: white;
+  position: relative;
+  float: right;
+  width: 68%;
+  padding: 0rem 1rem; }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    bottom: 0;
+    left: 33px;
+    background-color: #eee;
+    width: 10px;
+    z-index: 1; }
+  .timeline .t_entry {
+    margin-top: 1rem; }
+    .timeline .t_entry::after {
+      display: table;
+      content: '';
+      clear: both; }
+    .timeline .t_entry_left {
+      float: left;
+      position: absolute; }
+    .timeline .t_entry_right {
+      float: right;
+      width: calc(100% - (45px + 1rem));
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eee; }
+    .timeline .t_entry_avatar {
+      border-radius: 50px;
+      height: 45px;
+      width: 45px;
+      position: relative;
+      z-index: 2; }
