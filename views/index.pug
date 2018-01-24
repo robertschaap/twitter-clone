@@ -3,30 +3,37 @@ extends layout.pug
 block content
 
   main(role='main')
-    .widthwrapper
+    div.widthwrapper
       
       aside.sidebar
-        .sidebar_topic
+        div.sidebar_topic
           h3 Trending
           div
             each entry in trendingNotTweets
               div
-                div= entry.hashtag
+                div 
+                  a(href='#') #{entry.hashtag}
                 div #{entry.tweetCount} NotTweets
 
-        .sidebar_topic
+        div.sidebar_topic
           h3 Trending
           p Unintrusive Social Networking since 2018
       
       section.timeline
 
         each entry in notTweets
-          .t_entry
-            .t_entry_left
+          div.t_entry
+            div.t_entry_left
               img.t_entry_avatar(src='/images/aIF6J-S0_bigger.jpg')
-            .t_entry_right
-              div
+            div.t_entry_right
+              div.t_entry_header
                 span= entry.userName
                 span= entry.userHandle
               div= entry.notTweetBody
-              div Like
+              div.t_entry_toolbar
+                a(href='#')
+                  img(src='/images/heart.svg')
+                a(href='#')
+                  img(src='/images/bookmark.svg')
+                a(href='#')
+                  img(src='/images/retweet.svg')

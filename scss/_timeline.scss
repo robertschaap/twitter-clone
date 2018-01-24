@@ -31,14 +31,7 @@
       float: left;
       position: absolute;
     }
-  
-    &_right {
-      float: right;
-      width: calc(100% - (45px + 1rem));
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #eee;
-    }
-  
+    
     &_avatar {
       border-radius: 50px;
       height: 45px;
@@ -46,8 +39,27 @@
       position: relative;
       z-index: 2;
     }
-  }
 
+    &_right {
+      float: right;
+      width: calc(100% - (45px + 1rem));
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    &_header {
+      margin-bottom: 0.5rem;
+    }
+
+    &_toolbar {
+      padding-top: 0.5rem;
+
+      img {
+        height: 16px;
+        padding-right: 1rem;
+      }
+    }
+  }
 }
 
 

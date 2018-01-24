@@ -11,31 +11,38 @@ html(lang='en')
 
   body
     header(role='heading')
-      .header_top
-        .widthwrapper
-          | NotTwitter
+      div.header_top
+        div.widthwrapper
+          a(href='#')
+            img(src='/images/home.svg')
+          a(href='#')
+            img(src='/images/bell.svg')
+          a(href='#')
+            img(src='/images/cog.svg')
+          a(href='#')
+            img(src='/images/search.svg')
+          span NotTwitter: Twitter without the Noise
 
-      //- div.header_stick
       div
-        .header_banner
-        .header_user
-          .widthwrapper
+        div.header_banner
+        div.header_user
+          div.widthwrapper
             img.h_user_avatar(src='/images/aIF6J-S0_bigger.jpg')
-            .h_user_name
-              .h_user_fullname Robert Schaap
+            div.h_user_name
+              div.h_user_fullname Robert Schaap
               div @colorcodecode
-            .h_user_stat
+            div.h_user_stat
               div Tweets
-              .h_user_statcount 35
-            .h_user_stat
+              div.h_user_statcount 35
+            div.h_user_stat
               div Threads
-              .h_user_statcount 35
-            .h_user_stat
+              div.h_user_statcount 35
+            div.h_user_stat
               div Followers
-              .h_user_statcount 35
-            .h_user_stat
+              div.h_user_statcount 35
+            div.h_user_stat
               div Following
-              .h_user_statcount 35
+              div.h_user_statcount 35
     
     block content
 

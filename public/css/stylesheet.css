@@ -44,6 +44,9 @@ main {
   top: 0;
   left: 0;
   right: 0; }
+  .header_top img {
+    height: 16px;
+    padding-right: 1rem; }
 
 .header_banner {
   background: linear-gradient(to bottom right, #ffffcc 0%, #ffcc66 100%);
@@ -60,7 +63,8 @@ main {
     border-radius: 50px;
     width: 50px;
     height: 50px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin-right: 0.5rem; }
   .header_user .h_user_name {
     display: inline-block;
     vertical-align: middle;
@@ -105,14 +109,21 @@ main {
     .timeline .t_entry_left {
       float: left;
       position: absolute; }
-    .timeline .t_entry_right {
-      float: right;
-      width: calc(100% - (45px + 1rem));
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #eee; }
     .timeline .t_entry_avatar {
       border-radius: 50px;
       height: 45px;
       width: 45px;
       position: relative;
       z-index: 2; }
+    .timeline .t_entry_right {
+      float: right;
+      width: calc(100% - (45px + 1rem));
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eee; }
+    .timeline .t_entry_header {
+      margin-bottom: 0.5rem; }
+    .timeline .t_entry_toolbar {
+      padding-top: 0.5rem; }
+      .timeline .t_entry_toolbar img {
+        height: 16px;
+        padding-right: 1rem; }
