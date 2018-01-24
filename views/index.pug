@@ -2,7 +2,6 @@ extends layout.pug
 
 block content
 
-  //- main.main_stick
   main(role='main')
     .widthwrapper
       
@@ -10,29 +9,24 @@ block content
         .sidebar_topic
           h3 Trending
           div
-            div
-              div #codingbreak
-              div 0.1K Tweets
-            div
-              div #codingbreak
-              div 0.1K Tweets
-            div
-              div #codingbreak
-              div 0.1K Tweets
+            each entry in trendingNotTweets
+              div
+                div= entry.hashtag
+                div #{entry.tweetCount} NotTweets
+
         .sidebar_topic
           h3 Trending
           p Unintrusive Social Networking since 2018
       
       section.timeline
-        - var n = 0
-        while n < 20
+
+        each entry in notTweets
           .t_entry
             .t_entry_left
               img.t_entry_avatar(src='/images/aIF6J-S0_bigger.jpg')
             .t_entry_right
               div
-                span Robert Schaap
-                span @colorcodedcode
-              div My cats freak out when I play air guitar #codingbreak
+                span= entry.userName
+                span= entry.userHandle
+              div= entry.notTweetBody
               div Like
-          - n++

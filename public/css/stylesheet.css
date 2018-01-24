@@ -18,12 +18,13 @@ main {
   padding: 2rem 1rem 1rem 1rem;
   position: relative;
   z-index: 1; }
-  main .main_stick {
-    padding-top: 22rem; }
   main::after {
     content: '';
     display: table;
     clear: both; }
+
+.main_stick {
+  padding-top: 21.5rem; }
 
 .sidebar {
   float: left;
